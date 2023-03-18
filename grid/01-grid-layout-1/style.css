@@ -38,7 +38,7 @@ body, html {
 .article p {
   font-size: 18px;
   font-family: sans-serif;
-  color: white;
+  color: blue;
   text-align: left;
 }
 
@@ -51,9 +51,10 @@ body, html {
 
 .container{
   display: grid;
+  overflow: auto;
   grid-template: repeat(7, 1fr) / repeat(4, 1fr);
   gap: 15px;
-  min-width: 1200px;
+  min-width: 375px;
 }
 
 .header{
@@ -75,6 +76,7 @@ body, html {
 }
 
 .article{
+  overflow: auto;
   grid-row: 3 / 7;
   grid-column: 2 / -1;
 
